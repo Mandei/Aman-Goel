@@ -151,7 +151,7 @@
   }
 
 .top-head-table{
-  margin: 15% 16% 0 ;
+  margin: 12% 16% 0 ;
   width:73%;
   color:whitesmoke;
   position: relative;
@@ -181,7 +181,7 @@
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
-  margin: 15% auto;
+  margin: 12% auto;
   text-align: center;
   font-family: arial;
   float: left;
@@ -230,7 +230,7 @@ button:hover, a:hover {
 
 .details
   {
-    margin :15% 5%;
+    margin :12% 5%;
     width:60%;
     padding: 12px;
     float:left;
