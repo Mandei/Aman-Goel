@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Request</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.5/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="adminStyles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="adminPanel.js"></script>
+
+</head>
+
+<body>
+    <div>
+        <nav class="navbar  navbar-custom navbar-dark navbar-expand-lg  fixed-top "  >
+            <div class="logo">
+                <img  src="images/aboutus.png" />
+            </div>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                                <h1 class="text-white align-bottom mx-3 my-2">Home Service</h1>
+                    </li>
+                        
+                    <li class="nav-item ">
+                      <input class=" search mx-2 " type="search" placeholder="Search" aria-label="Search"><a><i id="nav_search_icon" class="fa fa-search" href="search.html"></i></a>
+                    </li>
+
+                 
+
+                  </ul>
+                  
+                    <form class="form-inline my-2 my-lg-0 ">
+
+                        <a href="#" class="notification mg-15 ml-2">
+                            <span><i class="fa fa-envelope"></i></span>
+                            <span class="badge">2</span>
+                        </a>
+                        
+                        <a href="#" class="notification mg-35 ">
+                          <span><i class="fa fa-bell"></i></span>
+                          <span class="badge">3</span>
+                        </a>
+                        
+                        <a href="#" class="btn logout-btn btn-sm">
+                            <span class="fa fa-sign-out my-2 mr-3"></span> Log out
+                        </a>
+                            
+                    </form>
+                 
+                </div>
+              </nav>
+        </div>
+              
+              <button class="toggle_btn hide-large" onclick="openSidebar()" >&#9776;</button>
+              <div class="sidenav sidenav-collapse  "  id="mySidenav">
+                
+                  <a href="javascript:void(0)" class="closebtn hide-large" onclick="closeSidebar()" >&times;</a>
+                  <div class="d-inline-flex  "> 
+                  <img src="images/profile.png"  class="profile_pic"> <label class="p-2">Mandeep <br><small>Admin</small> </label>
+                  </div>
+
+                  <a href="adminpanel.html" >Dashboard</a>
+                  <a href="adminPanelProfile.html" > Profile</a>
+                  <a href="adminPanelAddAdmin.html">Add Admin</a>
+                  <a href="adminPanelService.html">Services</a>
+                  <a href="#" class="active">Requests</a>
+                  
+              </div> 
+              
+
+                
+
+              
+                    
+                
+               <div class="content " >
+                    
+                    
+                          
+                    <div class="table-responsive">
+                    <div class="top-head-table border"> Requests </div>
+                   
+                    <table class="table w-75">
+                       <thead  >
+                         <tr>
+                           <th scope="col">Name</th>
+                           <th scope="col">Service name</th>
+                           <th scope="col">Description</th>
+                           <th scope="col">Time</th>
+                           <th scope="col">Date</th>
+                         </tr>
+                       </thead>
+                       <tbody>
+                         <tr>
+                           <td >Kailash</td>
+                           <td><button class="modal-btn" data-toggle="modal" data-target="#electrician">Electrician</button></td>
+                           <td>Installation</td>
+                           <td>1:00 pm- 3:00 pm</td>
+                           <td> 23-04-2019</td>
+                           
+                         </tr>
+                         <tr>
+                            <td >Manish</td>
+                            <td><button class="modal-btn" data-toggle="modal" data-target="#plumber">Plumber</button></td>
+                            <td>Fitting</td>
+                            <td>6:00 pm- 7:00 pm</td>
+                            <td> 12-04-2019</td>
+                         </tr>
+                         <tr>
+                                <td >Harpreet</td>
+                                <td><button class="modal-btn" data-toggle="modal" data-target="#electrician">Electrician</button></td>
+                                <td>Repair</td>
+                                <td>1:00 pm- 3:00 pm</td>
+                                <td> 20-04-2019</td>
+                         </tr>
+                       </tbody>
+                     </table>
+                    </div> 
+
+                     <div class="modal fade" id="electrician" role="dialog">
+                            <div class="modal-dialog">
+                            
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                        <h4 class="modal-title">Electrician list</h4>
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  
+                                </div>
+                                <div class="modal-body">
+                                    <div class="scroll">
+                                        <table class="modal-table">
+                                                <thead >
+                                                  <tr >
+                                                    <th colspan="2" >Available Workers</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td ><input type="radio" name="gender" value="male">Kailash</td>
+                                                    <td><input type="radio" name="gender" value="male">Manish</td>
+                                                    
+                                                  </tr>
+                                                  <tr>
+                                                      <td ><input type="radio" name="gender" value="male">Aakash</td>
+                                                      <td><input type="radio" name="gender" value="male">Manpreet</td>
+                                                      
+                                                  </tr>
+
+                                                  <tr>
+                                                        <td ><input type="radio" name="gender" value="male">Aakash</td>
+                                                        <td><input type="radio" name="gender" value="male">Manpreet</td>
+                                                        
+                                                    </tr>
+                                                  
+                                            </tbody>
+                                            </table>
+                                            </div>
+                                            <button class="asign-btn">Asssign Worker</button>
+                                </div>
+                                
+                              </div>
+                              
+                            </div>
+                          </div>
+
+                          <div class="modal fade" id="plumber" role="dialog">
+                                <div class="modal-dialog">
+                                
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                            <h4 class="modal-title">Plumbers List</h4>
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      
+                                    </div>
+                                    <div class="modal-body">
+                                            <table class="modal-table">
+                                                    <thead >
+                                                      <tr >
+                                                        <th colspan="2" >Available Workers</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td ><input type="radio" name="gender" value="male">Kailash</td>
+                                                        <td><input type="radio" name="gender" value="male">Manish</td>
+                                                        
+                                                      </tr>
+                                                      <tr>
+                                                          <td ><input type="radio" name="gender" value="male">Aakash</td>
+                                                          <td><input type="radio" name="gender" value="male">Manpreet</td>
+                                                          
+                                                      </tr>
+                                                      
+                                                </tbody>
+                                                </table>
+                                                <button class="asign-btn">Asssign Worker</button>
+                                    </div>
+                                    
+                                  </div>
+                                  
+                                </div>
+                              </div>
+
+                              <div class="modal fade" id="mechanic" role="dialog">
+                                    <div class="modal-dialog">
+                                    
+                                      <!-- Modal content-->
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                                <h4 class="modal-title">Mechanic List</h4>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          
+                                        </div>
+                                        <div class="modal-body">
+                                                <table class="modal-table">
+                                                        <thead >
+                                                          <tr >
+                                                            <th colspan="2" >Available Workers</th>
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                          <tr>
+                                                            <td ><input type="radio" name="gender" value="male">Kailash</td>
+                                                            <td><input type="radio" name="gender" value="male">Manish</td>
+                                                            
+                                                          </tr>
+                                                          <tr>
+                                                              <td ><input type="radio" name="gender" value="male">Aakash</td>
+                                                              <td><input type="radio" name="gender" value="male">Manpreet</td>
+                                                              
+                                                          </tr>
+
+
+                                                          
+                                                          
+                                                    </tbody>
+                                                    </table>
+                                                    <button class="asign-btn">Asssign Worker</button>
+                                        </div>
+                                        
+                                      </div>
+                                      
+                                    </div>
+                                  </div>
+                 
+               </div>
+            
+
+              </body>
+</html>
