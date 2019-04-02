@@ -18,11 +18,14 @@
 
 </head>
 
-<body>
+<body class="admin-body">
     <div>
-        <nav class="navbar  navbar-custom navbar-dark navbar-expand-lg  fixed-top "  >
+      
+            <nav class="navbar  navbar-custom navbar-dark navbar-expand-lg  fixed-top "  >
             <div class="logo">
-                <img  src="images/aboutus.png" />
+                    <a href="adminpanel.html">
+                <img  src="images/admin-logo.png" />
+                </a>
             </div>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -44,17 +47,28 @@
                   
                     <form class="form-inline my-2 my-lg-0 ">
 
-                        <a href="#" class="notification mg-15 ">
-                            <span><i class="fa fa-envelope"></i></span>
-                            <span class="badge">2</span>
-                        </a>
+                        <div class="btn-group show-on-hover"   >
+                            <button type="button" class="btn btn-Dark dropdown-toggle" data-toggle="dropdown" >
+                                    <a href="#" class="notification mg-35 ">
+                                            <span><i class="fa fa-bell"></i></span>
+                                            <span class="badge">0</span>
+                                    </a>
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" style="padding: 25px; background-color: rgb(88, 103, 133)"  role="menu">
+                                    <li style="width:250px;"><a href="#" style="color: white" >Irfan has accept your request</a></li>
+                                    <hr>
+                                    <li style="width:250px;"><a href="#" style="color: white" >Irfan has accept your request</a></li>
+                                     <hr>
+                                     <li style="width:250px;"><a href="#" style="color:white" >Irfan has accept your request</a></li>
+                                     <hr>
+                                     <li style="width:250px;"><a href="#" style="color: white" >Irfan has accept your request</a></li>
+                                     <hr>
+                                     <li style="width:250px;"><a href="#" style="color: white" >Irfan has accept your request</a></li>
+                            </ul>
+                        </div>
                         
-                        <a href="#" class="notification mg-35 ">
-                          <span><i class="fa fa-bell"></i></span>
-                          <span class="badge">3</span>
-                        </a>
-                        
-                        <a href="#" class="btn logout-btn btn-sm">
+                        <a href="#" class="btn btn-primary  logout-btn btn-sm">
                             <span class="fa fa-sign-out my-2 mr-3"></span> Log out
                         </a>
                             
@@ -74,7 +88,6 @@
 
                   <a href="adminpanel.html" active>Dashboard</a>
                   <a href="#" class="active">Profile</a>
-                  <a href="adminPanelAddAdmin.html">Add Admin</a>
                   <a href="adminPanelService.html">Services</a>
                   <a href="adminPanelRequest.html">Requests</a>
                   
@@ -83,7 +96,7 @@
               <div class="content " >
                 <div class=" container col-sm-12 details border">
                     
-                    <h2 style="font-size:2vw"> Update Details</h2>
+                    <h2 > Update Details</h2>
                     <div class"container">
                         <form>
                             <div class="row m-3 ">

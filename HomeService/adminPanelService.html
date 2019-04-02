@@ -18,11 +18,13 @@
 
 </head>
 
-<body>
+<body class="admin-body">
     <div>
         <nav class="navbar  navbar-custom navbar-dark navbar-expand-lg  fixed-top "  >
             <div class="logo">
-                <img  src="images/aboutus.png" />
+                <a href="adminpanel.html">
+                    <img  src="images/admin-logo.png" />
+                    </a>
             </div>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -44,17 +46,28 @@
                   
                     <form class="form-inline my-2 my-lg-0 ">
 
-                        <a href="#" class="notification mg-15 ">
-                            <span><i class="fa fa-envelope"></i></span>
-                            <span class="badge">2</span>
-                        </a>
+                      <div class="btn-group show-on-hover"   >
+                        <button type="button" class="btn btn-Dark dropdown-toggle" data-toggle="dropdown" >
+                                <a href="#" class="notification mg-35 ">
+                                        <span><i class="fa fa-bell"></i></span>
+                                        <span class="badge">0</span>
+                                </a>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" style="padding: 25px; background-color: rgb(88, 103, 133)"  role="menu">
+                                <li style="width:250px;"><a href="#" style="color: white" >Irfan has accept your request</a></li>
+                                <hr>
+                                <li style="width:250px;"><a href="#" style="color: white" >Irfan has accept your request</a></li>
+                                 <hr>
+                                 <li style="width:250px;"><a href="#" style="color:white" >Irfan has accept your request</a></li>
+                                 <hr>
+                                 <li style="width:250px;"><a href="#" style="color: white" >Irfan has accept your request</a></li>
+                                 <hr>
+                                 <li style="width:250px;"><a href="#" style="color: white" >Irfan has accept your request</a></li>
+                        </ul>
+                    </div>
                         
-                        <a href="#" class="notification mg-35 ">
-                          <span><i class="fa fa-bell"></i></span>
-                          <span class="badge">3</span>
-                        </a>
-                        
-                        <a href="#" class="btn logout-btn btn-sm">
+                        <a href="#" class="btn btn-primary logout-btn btn-sm">
                             <span class="fa fa-sign-out my-2 mr-3"></span> Log out
                         </a>
                             
@@ -74,23 +87,13 @@
 
                   <a href="adminpanel.html">Dashboard</a>
                   <a href="adminPanelProfile.html"> Profile</a>
-                  <a href="adminPanelAddAdmin.html">Add Admin</a>
                   <a href="#" class="active">Services</a>
                   <a href="adminPanelRequest.html">Requests</a>
                   
               </div> 
-              
-
-                
-
-              
-                    
-                
                <div class="content " >
-                 
+                 <div class="table-responsive scroll">
                 <div class="top-head-table border"> <h2>Services Available</h2> </div>
-                   
-                
                  <table class="table service-scroll w-75  ">
                     <thead  >
                       <tr>
@@ -102,8 +105,6 @@
                       </tr>
                     </thead>
                     <tbody>
-                    
-                      
                       <tr>
                         <td ><input type="radio" name="service" id="plumber">  Plumber</td>
                         <td>Repair and fitting</td>
@@ -129,16 +130,29 @@
                         <td>70</td>
                         <td>10:00 am-1:00pm</td>
                       </tr>
+                      <tr>
+                          <td ><input type="radio" name="service" id="plumber">  Plumber</td>
+                          <td>New connection fitting</td>
+                          <td>70</td>
+                          <td>10:00 am-1:00pm</td>
+                        </tr>
+                        <tr>
+                            <td ><input type="radio" name="service" id="plumber">  Plumber</td>
+                            <td>New connection fitting</td>
+                            <td>70</td>
+                            <td>10:00 am-1:00pm</td>
+                          </tr>
+                          <tr>
+                              <td ><input type="radio" name="service" id="plumber">  Plumber</td>
+                              <td>New connection fitting</td>
+                              <td>70</td>
+                              <td>10:00 am-1:00pm</td>
+                            </tr>
                     </tbody>
                   </table>
-
-                  
                   <a href="adminPanelAddService.html"><button class="update-service-btn">Add service</button></a>
                   <a href="adminPanelAddService.html"><button class="add-service-btn">Update service</button></a>
-                
-                </div> 
-             
-            
-
+      </div> 
+      </div>
               </body>
 </html>

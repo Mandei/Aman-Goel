@@ -317,3 +317,32 @@ button:hover, a:hover {
     width:150px;
     text-align: center;
 }
+
+
+/*scroll table */
+.scroll thead{
+  border: 1px solid black;
+
+}
+
+.scroll tbody{
+  max-height: 250px;
+  display: block;
+  overflow: auto;
+}
+
+.scroll table thead, .scroll table tbody tr {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+
+}
+
+.scroll table tbody tr td{
+  word-wrap: break-word;
+}
+
+
+.scroll table thead{
+  word-wrap: break-word;
+}

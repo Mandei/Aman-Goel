@@ -1,13 +1,11 @@
-
-     
-      
 function validation(){
            var fname=document.getElementById('fname').value;
            var lname=document.getElementById('lname').value;
            var email=document.getElementById('email').value;
            var contact=document.getElementById('contact').value;
            var pswd=document.getElementById('pswd').value;
-           var conpswd=document.getElementById('conpswd').value;                
+           var conpswd=document.getElementById('conpswd').value;   
+                       
 
            if(fname==""){
                document.getElementById('firstname').innerHTML="**Please fill the first name field";
@@ -89,5 +87,7 @@ function validation(){
                return false;
            }
 
-         
-   }
+          return true;
+        
+        }
+       
