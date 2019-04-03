@@ -63,6 +63,13 @@
         outline: none;
         background-color: orange;
     }
+    .login-admin{
+        border-radius:12px;
+        padding: 6px 20px;
+        outline: none;
+        background-color: orange;
+    }
+
 
     .search-drop{
         border-radius:24px;

@@ -39,10 +39,18 @@
               </ul>
                 <form class="form-inline my-2 my-lg-0 ">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"><a id="nav_search_icon" class="fa fa-search" href="search.html"></a>
-                    
-                    <a href="loginUser.html"><button type="button" class="btn  login-btn btn-warning" >
-                                   Login/Register
-                               </button></a> 
+                    </form>
+                    <form class="form-inline my-2 my-lg-0 ">
+                    <div class="dropdown">
+                      <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                        Login/Register
+                      </button>
+                      <div class="dropdown-menu" style="background-color: green">
+                        <a class="dropdown-item" href="loginAdmin.html">Admin</a>
+                        <a class="dropdown-item" href="loginUser.html">User</a>
+                        <a class="dropdown-item" href="loginWorker.html">Worker</a>
+                      </div>
+                    </div>
                 </form>
             </div>
           </nav>
