@@ -66,7 +66,6 @@
 .logout-btn
     {
       background-color: orange;
-      color:white;
     }
 
  /* end navbar */
@@ -99,20 +98,19 @@
 
   }  
 
-
-    .toggle_btn
-{
-  position: relative;
-  background-color: rgb(34, 33, 33);
-  color: whitesmoke;
-  border:0;
-  cursor: pointer;
-  width:50px;
-  height:40px;
-  top:76px;
-  left:0;
- 
-}
+.toggle_btn
+  {
+    position: realtive;
+    background-color: rgb(34, 33, 33);
+    color: whitesmoke;
+    border:0;
+    cursor: pointer;
+    width:50px;
+    height:40px;
+    top:0;
+    left:0;
+    z-index: -1;
+  }
   
   .sidenav a {
     padding: 8px 8px 8px 32px;
