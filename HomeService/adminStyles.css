@@ -273,18 +273,7 @@ button:hover, a:hover {
     padding: 8px 15px;
     background-color: burlywood;
    }
-   .service-field{
-    background-color:transparent !important;
-    border:none ; 
-    outline: none;
-    border-bottom: 2px solid black
-   }
-
-   .service-field input:focus
-  {
-    border: none;
-    outline: none;
-   }
+   
   
    
    .modal{
@@ -359,4 +348,40 @@ button:hover, a:hover {
   margin-top:10%;
   border-top-left-radius: 10% 50%;
   border-bottom-right-radius: 10% 50%;
+}
+
+/* floatlabel */
+.service-field{
+  background-color:transparent !important;
+  border:none ; 
+  outline: none;
+  border-bottom: 2px solid black
+ }
+
+
+
+.floating-label {
+	position: relative;
+  top:-30px;
+  left:10px;
+  font-size: 16px;
+	transition: 0.2s ease all;
+}
+
+
+input:focus ~ .floating-label,
+ input:not(:focus):valid ~ .floating-label{
+  top: -60px;
+  font-size: 15px;
+  color: blueviolet;
+	opacity: 1;
+}
+
+textarea:focus ~ .floating-label,
+textarea:not(:focus):valid ~ .floating-label{
+  top: -84px;
+  font-size: 15px;
+  
+  color:blueviolet;
+	opacity: 1;
 }
