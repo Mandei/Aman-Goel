@@ -4,7 +4,8 @@ function validation(){
            var email=document.getElementById('email').value;
            var contact=document.getElementById('contact').value;
            var pswd=document.getElementById('pswd').value;
-           var conpswd=document.getElementById('conpswd').value;   
+           var conpswd=document.getElementById('conpswd').value; 
+           var locality=document.getElementById('locality').value;  
                        
 
            if(fname==""){
@@ -85,6 +86,11 @@ function validation(){
            if(pswd!=conpswd){
                document.getElementById('confirmpass').innerHTML="**Password is not matching with confirm password";
                return false;
+           }
+
+           if(locality==""){
+            document.getElementById('address').innerHTML="**Please fill the Locality field";
+            return false;
            }
 
           return true;

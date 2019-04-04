@@ -1,4 +1,3 @@
-
 /* sidebar functions */
 
 var table=document.getElementById("Service");
@@ -33,5 +32,3 @@ function openSidebar() {
   function closeSidebar() {
         document.getElementById("mySidenav").style.width = "0px";
   }
-
-  
