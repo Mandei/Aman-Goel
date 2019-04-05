@@ -32,3 +32,35 @@ function openSidebar() {
   function closeSidebar() {
         document.getElementById("mySidenav").style.width = "0px";
   }
+
+/* time validation*/
+  function print()
+  {
+  var from=document.getElementById("from1").value;
+  var to=document.getElementById("to1").value;
+  var fromArray=new Array();
+  var toArray=new Array();
+  fromArray=from.split(":");
+  toArray=to.split(":");
+  fromHour=parseInt(fromArray[0]);
+  tohour=parseInt(toArray[0]);
+  // document.getElementById("dateshow").innerHTML=fromArray[0]+toArray[0];
+  if(tohour<fromHour)
+  {
+  document.getElementById("dateshow").innerHTML="to hour must be greater";
+  return false;
+  }
+
+  else if(tohour==fromHour)
+  {
+  if(parseInt(fromArray[1])<=parseInt(toArray[1]))
+  document.getElementById("dateshow").innerHTML="valid entries";
+  else
+  {
+  document.getElementById("dateshow").innerHTML="to hour must be greater";
+  return false;
+  }
+  }
+  else
+  document.getElementById("dateshow").innerHTML="valid entries";
+  }
