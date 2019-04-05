@@ -33,11 +33,13 @@ function openSidebar() {
         document.getElementById("mySidenav").style.width = "0px";
   }
 
-/* time validation*/
+
+
+/* Time Validation*/
   function print()
   {
-  var from=document.getElementById("from1").value;
-  var to=document.getElementById("to1").value;
+  var from=document.getElementById("from").value;
+  var to=document.getElementById("to").value;
   var fromArray=new Array();
   var toArray=new Array();
   fromArray=from.split(":");
@@ -47,7 +49,7 @@ function openSidebar() {
   // document.getElementById("dateshow").innerHTML=fromArray[0]+toArray[0];
   if(tohour<fromHour)
   {
-  document.getElementById("dateshow").innerHTML="to hour must be greater";
+  document.getElementById("dateshow").innerHTML="To hour must be greater";
   return false;
   }
 

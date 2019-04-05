@@ -82,7 +82,7 @@
                     <a href="userRequestStatus.html">Request status</a>
                 </div> 
   
-<form action="#" method="post">                
+<form  method="post" onclick="print()">                
 <div class="content" style="margin-top:10%;">
    <div class="jumbotron col-lg-6  col-8 mx-auto my-4" style="background-color: rgb(61, 59, 58);">
         <div class="container"  >
@@ -91,7 +91,7 @@
                <form action="#" >
                   <div class="form-group ">
                     <label for="date" style="color: white">Date:</label>
-                    <input type="date" class="form-control" id="date" placeholder="Date" name="date" required>
+                    <input id="datefield" type='date' min='1899-01-01' max='2000-13-13' class="form-control"   name="date" required>
                     
                   </div>
                   <div class="form-group ">
@@ -99,12 +99,13 @@
                     <br>
                     <div class="form-inline" style="color: white">
                         <div>
-                            From <input type="time" style="width: 184px;"  class="form-control" id="time"  name="time" required>
+                            From <input type="time" style="width: 184px;"  class="form-control" id="from"  name="time" required>
                          </div>
                          <div >
-                                &nbsp;&nbsp; To <input type="time" style="width: 184px;" class="form-control" id="time"  name="time" required>
+                                &nbsp;&nbsp; To <input type="time" style="width: 184px;" class="form-control" id="to"  name="time" required>
                         </div>
                         </div>
+                        <span style="color: red; font-weight: bold"  id="dateshow"></span>
                   </div>
                   <div class="form-group">
                     <label for="location" style="color: white">Location:</label>
@@ -119,6 +120,24 @@
               </div>
             </div>
     </div>
-</form>    
+</form>   
+
+<script>
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth()+1; //January is 0!
+    var yyyy = today.getFullYear();
+     if(dd<10){
+            dd='0'+dd
+        } 
+        if(mm<10){
+            mm='0'+mm
+        } 
+    
+    today = yyyy+'-'+mm+'-'+dd;
+    document.getElementById("datefield").setAttribute("min", today);
+    
+    </script>
+
 </body>
 </html>
