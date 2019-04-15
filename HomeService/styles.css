@@ -120,3 +120,29 @@
     float: left
 }
 
+
+
+
+
+
+ .scroll-small tbody{
+    max-height: 80px;
+    display: block;
+    overflow: auto;
+  }
+  
+  .scroll-small table thead, .scroll-small table tbody tr {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+  
+  }
+  
+  .scroll-small table tbody tr td{
+    word-wrap: break-word;
+  }
+  
+  
+  .scroll-small table thead{
+    word-wrap: break-word;
+  } 
